@@ -1,0 +1,39 @@
+.backface-hidden { backface-visibility: hidden; }
+
+%border-title {
+  background-repeat: no-repeat;
+  background-size: 50px 2px;
+  background-position: 0 100%;
+  padding-bottom: 4px;
+}
+
+.border-title {
+  @extend %border-title;
+  background-image: linear-gradient(
+    rgb(var(--secondary)),
+    rgb(var(--secondary)),
+  );
+
+  &-white {
+    @extend %border-title;
+    background-image: linear-gradient(white, white);
+  }
+
+  &-lg {
+    @extend %border-title;
+    @apply pb-5;
+    background-size: 200px 2px;
+  }
+}
+
+%hover-scale { transition: transform 0.2s ease-in-out; }
+
+.hover\:scale {
+  @extend %hover-scale;
+  &:hover { transform: scale(1.025); }
+
+  &-1\/10 {
+    @extend %hover-scale;
+    &:hover { transform: scale(1.1); }
+  }
+}

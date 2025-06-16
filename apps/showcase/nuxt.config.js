@@ -46,7 +46,8 @@ export default defineNuxtConfig({
     },
     primevue: {
         autoImport: true, // When enabled, the module automatically imports PrimeVue components and directives used throughout the application.
-        importTheme: { from: '@/themes/app-theme.js' }
+        // importTheme: { from: '@/themes/app-theme.js' }
+        options: { theme: 'none' },
     },
     app: {
         baseURL: baseUrl,
@@ -70,7 +71,13 @@ export default defineNuxtConfig({
             ],
             link: [
                 { rel: 'icon', href: baseUrl + 'favicon.ico' },
-                { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+                { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
+                { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+                { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+                {
+                  rel: 'stylesheet',
+                  href: 'https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&display=swap',
+                },
             ],
             script: [
                 {
@@ -93,5 +100,13 @@ export default defineNuxtConfig({
             designerApiUrl: ''
         }
     },
-    css: ['primeicons/primeicons.css', '@/assets/styles/flags.css', '@docsearch/css/dist/style.css', '@/assets/styles/tailwind/main.css', '@/assets/styles/layout/layout.scss']
+    css: [
+      'primeicons/primeicons.css',
+      '@/assets/styles/flags.css',
+      '@docsearch/css/dist/style.css',
+      '@/assets/styles/tailwind/main.css',
+      '@/assets/styles/layout/layout.scss',
+      '@/assets/smtc/_tw.css',
+      '@/assets/smtc/_style.css',
+    ]
 });
