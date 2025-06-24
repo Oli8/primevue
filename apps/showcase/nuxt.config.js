@@ -107,6 +107,7 @@ export default defineNuxtConfig({
       '@/assets/styles/tailwind/main.css',
       '@/assets/styles/layout/layout.scss',
       // ours
+      '@/assets/smtc/_fix.css',
       '@/assets/smtc/_tw.css',
       '@/assets/smtc/_style.css',
     ]
