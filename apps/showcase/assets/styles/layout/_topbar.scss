@@ -22,6 +22,8 @@
     justify-content: space-between;
 
     .layout-topbar-logo-container {
+        display: flex;
+        align-items: center;
         width: 250px;
         margin-inline-end: 4rem;
     }
