@@ -5,11 +5,12 @@
     width: calc(100% - var(--p-scrollbar-width, 0px));
     z-index: 1100;
     transition: background-color .5s, border-color .5s;
-    border-bottom: 1px solid transparent;
+    border-bottom: 4px solid rgb(var(--secondary));
+    background-color: rgb(var(--primary));
+
 
     &.layout-topbar-sticky {
-        border-bottom: 1px solid var(--border-color);
-        background-color: var(--topbar-sticky-background);
+        background-color: rgb(var(--primary-600));
         backdrop-filter: blur(8px);
     }
 }
