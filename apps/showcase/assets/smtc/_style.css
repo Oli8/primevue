@@ -1901,10 +1901,9 @@
 }
 
 .p-button-outlined.p-button-secondary {
-    border-color: rgb(var(--secondary-800));
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-    color: rgb(var(--secondary-800));
+    border-color: rgb(var(--secondary));
+    background-color: transparent;
+    color: rgb(var(--secondary));
 }
 
 .p-button-outlined.p-button-secondary:hover {
