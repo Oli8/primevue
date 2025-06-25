@@ -156,17 +156,13 @@ export default {
             indexName: 'primevue',
             apiKey: '9bb5939e36897b26ff7de5b7b64d6c43',
             transformItems: (items) => {
-                const isLocalhost = process.env.NODE_ENV !== 'production';
-
                 return items.map((item) => {
-                    if (isLocalhost) {
-                        const url = new URL(item.url);
+                    const url = new URL(item.url);
 
-                        url.protocol = window.location.protocol;
-                        url.hostname = window.location.hostname;
-                        url.port = window.location.port;
-                        item.url = url.toString();
-                    }
+                    url.protocol = window.location.protocol;
+                    url.hostname = window.location.hostname;
+                    url.port = window.location.port;
+                    item.url = url.toString();
 
                     return item;
                 });
