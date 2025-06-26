@@ -5,8 +5,8 @@
     width: calc(100% - var(--p-scrollbar-width, 0px));
     z-index: 1100;
     transition: background-color .5s, border-color .5s;
-    border-bottom: 4px solid rgb(var(--secondary));
-    background-color: rgb(var(--primary));
+    border-bottom: 4px solid rgb(var(--primary));
+    background-color: rgb(var(--primary-950));
 
 
     &.layout-topbar-sticky {

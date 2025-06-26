@@ -1,0 +1,130 @@
+:root {
+  // green
+  --primary: 9 176 158;
+  --primary-50: 239 254 250;
+  --primary-100: 201 254 243;
+  --primary-200: 147 252 232;
+  --primary-300: 85 243 218;
+  --primary-400: 35 222 199;
+  --primary-500: 9 176 158;
+  --primary-600: 5 156 143;
+  --primary-700: 9 124 115;
+  --primary-800: 12 99 93;
+  --primary-900: 15 82 77;
+  --primary-950: 1 50 49;
+  --primary-hover: 9 124 115;
+  // yellow
+  --secondary: 252 251 53;
+  --secondary-50: 253 254 232;
+  --secondary-100: 250 254 195;
+  --secondary-200: 250 254 138;
+  --secondary-300: 252 251 53;
+  --secondary-400: 249 238 22;
+  --secondary-500: 233 214 9;
+  --secondary-600: 201 168 5;
+  --secondary-700: 160 121 8;
+  --secondary-800: 133 95 14;
+  --secondary-900: 113 78 18;
+  --secondary-950: 66 41 6;
+
+  --success: 57 94 22;
+  --success-light: 178 235 107;
+  --success-50: 245 253 232;
+  --success-100: 232 250 205;
+  --success-200: 210 244 162;
+  --success-300: 178 235 107;
+  --success-400: 151 222 66;
+  --success-500: 117 195 31;
+  --success-600: 90 156 20;
+  --success-700: 68 119 20;
+  --success-800: 57 94 22;
+  --success-900: 50 80 23;
+  --success-950: 23 44 7;
+
+  --warning: 225 208 71;
+  --warning-light: 240 237 152;
+  --warning-50: 251 251 235;
+  --warning-100: 247 247 202;
+  --warning-200: 240 237 152;
+  --warning-300: 230 221 94;
+  --warning-400: 225 208 71;
+  --warning-500: 206 180 36;
+  --warning-600: 177 142 29;
+  --warning-700: 142 105 26;
+  --warning-800: 118 84 29;
+  --warning-900: 101 70 30;
+  --warning-950: 59 37 13;
+
+  --danger: 171 42 46;
+  --danger-light: 252 228 229;
+  --danger-50: 253 243 243;
+  --danger-100: 252 228 229;
+  --danger-200: 250 206 207;
+  --danger-300: 245 172 174;
+  --danger-400: 236 125 129;
+  --danger-500: 222 70 75;
+  --danger-600: 204 54 59;
+  --danger-700: 171 42 46;
+  --danger-800: 142 38 41;
+  --danger-900: 119 37 40;
+  --danger-950: 64 15 17;
+  // dark grey
+  --muted: 200 205 208;
+  --surface: 115 126 132;
+  --surface-50: 247 248 248;
+  --surface-100: 238 239 240;
+  --surface-200: 217 220 222;
+  --surface-300: 200 205 208;
+  --surface-400: 144 154 160;
+  --surface-500: 115 126 132;
+  --surface-600: 92 102 109;
+  --surface-700: 76 83 88;
+  --surface-800: 65 71 75;
+  --surface-900: 57 62 65;
+  --surface-950: 38 41 43;
+  // purple
+  --help: 132 24 123;
+  --help-50: 255 244 255;
+  --help-100: 254 232 255;
+  --help-200: 252 208 254;
+  --help-300: 251 172 249;
+  --help-400: 248 122 245;
+  --help-500: 238 71 233;
+  --help-600: 210 39 202;
+  --help-700: 174 29 164;
+  --help-800: 132 24 123;
+  --help-900: 116 27 107;
+  --help-950: 77 5 69;
+  // light blue
+  --info: 39 177 248;
+}
+
+body { background-color: rgb(var(--surface-100)); }
+
+::selection {
+  background-color: rgb(var(--primary));
+  color: white;
+}
+
+body { font-family: 'Lato', sans-serif; }
+h1, h2, h3, h4, h5, h6, .font-title {
+  font-family: 'Arvo', sans-serif;
+}
+
+.heading {
+  @apply text-2xl text-center my-4 text-white
+    bg-primary-600 rounded font-title;
+}
+
+h2 { @apply heading; }
+h3 { @apply text-xl; }
+
+em { @apply font-bold not-italic; }
+
+// NOTE: ignore links in Menu component and w/ hover classes
+a:hover:not([data-pc-name="menu"] a, [class*="hover:"]) {
+  color: rgb(var(--primary));
+}
+
+
+.unset { all: unset; }

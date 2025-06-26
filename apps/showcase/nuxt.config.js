@@ -47,7 +47,12 @@ export default defineNuxtConfig({
     primevue: {
         autoImport: true, // When enabled, the module automatically imports PrimeVue components and directives used throughout the application.
         // importTheme: { from: '@/themes/app-theme.js' }
-        options: { theme: 'none' },
+        // options: { theme: 'none' },
+        options: {
+          unstyled: true,
+          ripple: true,
+        },
+        importPT: { from: path.resolve(__dirname, './presets/aura/') },
     },
     app: {
         baseURL: baseUrl,
@@ -76,7 +81,7 @@ export default defineNuxtConfig({
                 { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
                 {
                   rel: 'stylesheet',
-                  href: 'https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&display=swap',
+                  href: 'https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap',
                 },
             ],
             script: [
@@ -107,8 +112,8 @@ export default defineNuxtConfig({
       '@/assets/styles/tailwind/main.css',
       '@/assets/styles/layout/layout.scss',
       // ours
-      '@/assets/smtc/_fix.css',
-      '@/assets/smtc/_tw.css',
-      '@/assets/smtc/_style.css',
+      '@/assets/padelata/_tw.css',
+      '@/assets/padelata/base.scss',
+      '@/assets/padelata/_fix.css',
     ]
 });
