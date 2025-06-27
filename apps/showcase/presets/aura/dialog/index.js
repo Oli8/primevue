@@ -12,7 +12,7 @@ export default {
             'm-0',
 
             // Color
-            'bg-surface-50/60 dark:bg-surface-900',
+            'bg-surface-50/80 dark:bg-surface-900',
             '[&:last-child]:border-b',
             'border-surface-200 dark:border-surface-700',
 

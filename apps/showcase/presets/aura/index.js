@@ -1,6 +1,6 @@
 import global from './global.js';
 import autocomplete from './autocomplete';
-import calendar from './calendar';
+import datepicker from './datepicker/index.js';
 import cascadeselect from './cascadeselect';
 import checkbox from './checkbox';
 import chips from './chips';
@@ -97,7 +97,7 @@ export default {
         ripple
     },
     autocomplete,
-    calendar,
+    datepicker,
     cascadeselect,
     checkbox,
     chips,

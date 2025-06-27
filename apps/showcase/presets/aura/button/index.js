@@ -60,7 +60,7 @@ export default {
             // Secondary Text Button
             { 'text-surface-500 dark:text-surface-300': props.text && props.severity === 'secondary' && !props.plain },
             // Secondary Outlined Button
-            { 'text-surface-500 dark:text-surface-300 border border-surface-500 hover:bg-surface-300/10': props.outlined && props.severity === 'secondary' && !props.plain },
+            { 'text-surface-500 dark:text-surface-300 border border-surface-500 hover:bg-surface-300/30': props.outlined && props.severity === 'secondary' && !props.plain },
 
             // Success Button
             {
@@ -137,7 +137,7 @@ export default {
             // Plain
             { 'hover:bg-gray-600 hover:border-gray-600': props.plain && !props.outlined && !props.text },
             // Text & Outlined Button
-            { 'hover:bg-surface-300/10': props.plain && (props.text || props.outlined) },
+            { 'hover:bg-surface-300/30': props.plain && (props.text || props.outlined) },
 
             // Primary
             { 'hover:bg-primary-hover hover:border-primary-hover': !props.link && props.severity === null && !props.text && !props.outlined && !props.plain },
@@ -149,7 +149,7 @@ export default {
             { 'hover:bg-secondary-500 dark:hover:bg-secondary-600 hover:border-secondary dark:hover:border-secondary-600': props.severity === 'secondary' && !props.text && !props.outlined && !props.plain },
             { 'focus:ring-surface-500 dark:focus:ring-surface-400': props.severity === 'secondary' },
             // Text & Outlined Button
-            { 'hover:bg-surface-300/10': (props.text || props.outlined) && props.severity === 'secondary' && !props.plain },
+            { 'hover:bg-surface-300/30': (props.text || props.outlined) && props.severity === 'secondary' && !props.plain },
 
             // Success
             { 'hover:bg-green-600 dark:hover:bg-green-300 hover:border-green-600 dark:hover:border-green-300': props.severity === 'success' && !props.text && !props.outlined && !props.plain },

@@ -33,36 +33,6 @@ export default {
     title: {
         class: 'leading-none font-semibold'
     },
-    toggler: {
-        class: [
-            // Alignments
-            'inline-flex items-center justify-center',
-            'relative',
-
-            // Sized
-            'w-7 h-7',
-            'm-0 p-0',
-
-            //Shape
-            'border-0 rounded-full',
-
-            //Color
-            'bg-transparent',
-            'text-surface-600 dark:text-surface-0/80',
-
-            // States
-            'hover:text-surface-800 dark:hover:text-surface-0',
-            'hover:bg-surface-50 dark:hover:bg-[rgba(255,255,255,0.03)]',
-            'focus:outline-none focus:outline-offset-0 focus-visible:ring-1 focus-visible:ring-primary-400 dark:focus-visible:ring-primary-300',
-
-            // Transitions
-            'transition-all duration-200 ease-in-out',
-
-            // Misc
-            'overflow-hidden no-underline',
-            'cursor-pointer'
-        ]
-    },
     togglerIcon: {
         class: 'inline-block w-4 h-4'
     },

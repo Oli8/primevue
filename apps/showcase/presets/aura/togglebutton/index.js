@@ -12,7 +12,7 @@ export default {
             'select-none'
         ]
     },
-    box: ({ props }) => ({
+    content: ({ props }) => ({
         class: [
             'relative',
 
@@ -31,7 +31,7 @@ export default {
             'bg-surface-100 dark:bg-surface-950',
             {
                 'text-surface-600 dark:text-white/60 before:bg-transparent': !props.modelValue,
-                'text-surface-800 dark:text-white/80 before:bg-surface-0 dark:before:bg-surface-800': props.modelValue
+                'text-surface-800 dark:text-white/80 before:bg-primary-500/50 dark:before:bg-surface-800': props.modelValue
             },
 
             // Before
